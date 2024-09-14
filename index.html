@@ -10,7 +10,39 @@
     <p><b>LES News is a website made to keep you updated on all the new school rules, news, and more! The goal of the LES News website is to make sure students are aware of the latest rules, incidents, and news from a neutral standpoint, not to spread gossip, so please don't use it as such! Violators will be terminated and will not have a chance to appeal their ban!</b></p>
     <p>On September 24, 2024, the founder of LES News released it as an official website as a coding project after learning HTML and Python. This website will upload multiple news articles every week on all of the changes made in LES that week.</p>
     <h2>News:</h2>
+    <h2>Poll</h2>
+<p>What's your favorite part of LES News?</p>
+
+<form id="pollForm">
+    <input type="radio" id="news" name="poll" value="News">
+    <label for="news">News</label><br>
     
+    <input type="radio" id="rules" name="poll" value="Rules Update">
+    <label for="rules">Rules Update</label><br>
+    
+    <input type="radio" id="links" name="poll" value="Links to School Resources">
+    <label for="links">Links to School Resources</label><br>
+    
+    <input type="radio" id="others" name="poll" value="Others">
+    <label for="others">Others</label><br><br>
+
+    <input type="button" value="Submit Vote" onclick="submitVote()">
+</form>
+
+<p id="result"></p>
+
+<script>
+function submitVote() {
+    // Get the value of the selected radio button
+    let pollValue = document.querySelector('input[name="poll"]:checked');
+    if (pollValue) {
+        document.getElementById('result').innerHTML = "Thank you for voting for: " + pollValue.value;
+    } else {
+        document.getElementById('result').innerHTML = "Please select an option before voting.";
+    }
+}
+</script>
+
     <h4>Other links:</h4>
     <hr>
     <a href="https://lesson.lesbg.com/index.php" target="_blank" title="This will take you to LESSON.lesbg.com">Go to LESSON</a>
