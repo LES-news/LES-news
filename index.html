@@ -9,6 +9,9 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body takes full height */
         }
 
         /* Navigation Bar */
@@ -42,7 +45,7 @@
         /* Main Content */
         .container {
             padding: 20px;
-            margin-bottom: 60px; /* Ensure space for the footer */
+            flex: 1; /* Allow container to expand and push footer to bottom */
         }
 
         /* Hero Section */
@@ -125,11 +128,9 @@
             background-color: #2c3e50;
             color: #fff;
             text-align: center;
-            padding: 10px; /* Reduced padding */
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            font-size: 0.8em; /* Reduced font size */
+            padding: 10px;
+            font-size: 1em; /* Normal font size */
+            margin-top: auto; /* Push footer to the bottom */
         }
 
         footer a {
@@ -284,7 +285,7 @@
         <div class="testimonials">
             <h2>What People Are Saying</h2>
             <blockquote>
-                <p>"LES News keeps me updated with all the exciting events and news. It's an essential part of my school life!"</p>
+                <p>"Great job with the news updates! It's really nice to see what's happening around school."</p>
                 <footer>— Student, LES</footer>
             </blockquote>
             <blockquote>
@@ -292,22 +293,15 @@
                 <footer>— Parent, LES</footer>
             </blockquote>
         </div>
-
-        <!-- Newsletter Sign-Up -->
-        <div class="newsletter">
-            <h2>Sign Up for Our Newsletter</h2>
-            <p>Stay updated with the latest news and updates straight to your inbox!</p>
-            <form action="https://example.com/subscribe" method="post">
-                <input type="email" name="email" placeholder="Your email address" required>
-                <input type="submit" value="Subscribe">
-            </form>
+        <!-- About Us Section -->
+        <div class="section" id="about">
+            <h2>About</h2>
+            <p>LES News is dedicated to keeping the students, parents, and staff informed about all the latest happenings around our school. Our team of writers and reporters work hard to bring you timely updates and engaging content.</p>
         </div>
-    </div>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 LES News. All rights reserved.</p>
-        <p><a href="#contact">Contact Us</a> | <a href="#about">About Us</a></p>
     </footer>
 </body>
 </html>
