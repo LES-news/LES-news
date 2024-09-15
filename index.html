@@ -56,6 +56,55 @@
 
         .hero h2 {
             font-size: 2.5em;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LES News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .container {
+            padding: 20px;
+            margin-bottom: 60px; /* Ensure space for the footer */
+        }
+
+        /* Hero Section */
+        .hero {
             margin-bottom: 20px;
             color: #2ecc71; /* Green color for the hero text */
         }
@@ -134,10 +183,11 @@
             background-color: #2c3e50;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 10px; /* Reduced padding */
             position: fixed;
             width: 100%;
             bottom: 0;
+            font-size: 0.8em; /* Reduced font size */
         }
 
         footer a {
@@ -293,23 +343,29 @@
             <h2>What People Are Saying</h2>
             <blockquote>
                 <p>"LES News keeps me updated with all the exciting events and news. It's an essential part of my school life!"</p>
-                <footer>- A Student</footer>
+                <footer>— Student, LES</footer>
             </blockquote>
             <blockquote>
-                <p>"I love reading the latest updates on LES News. It's always fun and informative!"</p>
-                <footer>- A Parent</footer>
+                <p>"I love reading the articles and updates. Great job on keeping everyone informed!"</p>
+                <footer>— Parent, LES</footer>
             </blockquote>
         </div>
 
-        <!-- About Us Section -->
-        <div class="section" id="about">
-            <h2>About</h2>
-            <p>LES News is dedicated to keeping the students, parents, and staff informed about all the latest happenings around our school. Our team of writers and reporters work hard to bring you timely updates and engaging content.</p>
+        <!-- Newsletter Sign-Up -->
+        <div class="newsletter">
+            <h2>Sign Up for Our Newsletter</h2>
+            <p>Stay updated with the latest news and updates straight to your inbox!</p>
+            <form action="https://example.com/subscribe" method="post">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <input type="submit" value="Subscribe">
+            </form>
         </div>
+    </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 LES News. All rights reserved. |<a href="https://www.example.com/about-me" target="_blank">William Aktaa</a></p>
+        <p>&copy; 2024 LES News. All rights reserved.</p>
+        <p><a href="#contact">Contact Us</a> | <a href="#about">About Us</a></p>
     </footer>
 </body>
 </html>
