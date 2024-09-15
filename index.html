@@ -9,9 +9,6 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensure body takes full height */
         }
 
         /* Navigation Bar */
@@ -45,7 +42,7 @@
         /* Main Content */
         .container {
             padding: 20px;
-            flex: 1; /* Allow container to expand and push footer to bottom */
+            margin-bottom: 60px; /* Ensure space for the footer */
         }
 
         /* Hero Section */
@@ -129,6 +126,9 @@
             color: #fff;
             text-align: center;
             padding: 10px; /* Reduced padding */
+            position: fixed;
+            width: 100%;
+            bottom: 0;
             font-size: 0.8em; /* Reduced font size */
         }
 
@@ -284,7 +284,7 @@
         <div class="testimonials">
             <h2>What People Are Saying</h2>
             <blockquote>
-                <p>"Great job with the news updates! It's really nice to see what's happening around school."</p>
+                <p>"LES News keeps me updated with all the exciting events and news. It's an essential part of my school life!"</p>
                 <footer>— Student, LES</footer>
             </blockquote>
             <blockquote>
