@@ -1,62 +1,4 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>LES News</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4; /* Light grey background for the whole page */
-            color: #333; /* Dark grey text for better readability */
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Navigation Bar */
-        nav {
-            background-color: #3498db;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: url('hero-image.jpg') no-repeat center center/cover;
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 2.5em;
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,6 +9,9 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body takes full height */
         }
 
         /* Navigation Bar */
@@ -100,7 +45,7 @@
         /* Main Content */
         .container {
             padding: 20px;
-            margin-bottom: 60px; /* Ensure space for the footer */
+            flex: 1; /* Allow container to expand and push footer to bottom */
         }
 
         /* Hero Section */
@@ -184,9 +129,6 @@
             color: #fff;
             text-align: center;
             padding: 10px; /* Reduced padding */
-            position: fixed;
-            width: 100%;
-            bottom: 0;
             font-size: 0.8em; /* Reduced font size */
         }
 
@@ -342,7 +284,7 @@
         <div class="testimonials">
             <h2>What People Are Saying</h2>
             <blockquote>
-                <p>"LES News keeps me updated with all the exciting events and news. It's an essential part of my school life!"</p>
+                <p>"Great job with the news updates! It's really nice to see what's happening around school."</p>
                 <footer>— Student, LES</footer>
             </blockquote>
             <blockquote>
