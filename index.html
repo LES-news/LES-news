@@ -3,13 +3,37 @@
 <head>
     <title>LES News</title>
     <style>
-        /* Adjusting image sizes to make them smaller */
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Light grey background for the whole page */
+            color: #333; /* Dark grey text for better readability */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #2c3e50; /* Darker color for headers */
+        }
+
+        .important-text {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            color: #e74c3c; /* Red color for important text */
+        }
+
         img {
             max-width: 100%;
             height: auto;
         }
 
-        /* Scaling down specific images */
         .scaled-image {
             width: 50%; /* Scale down the images to 50% of their original size */
             height: auto;
@@ -18,14 +42,6 @@
             margin-right: auto;
         }
 
-        /* Larger font for important text */
-        .important-text {
-            font-size: 1.5em;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        /* Styling for iframes to ensure they fit nicely on mobile */
         iframe {
             width: 100%;
             max-width: 350px;
@@ -34,44 +50,83 @@
             margin-bottom: 20px;
         }
 
-        body {
-            font-family: Arial, sans-serif;
+        .section {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 40px 0;
+        }
+
+        a {
+            color: #3498db; /* Blue color for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            .scaled-image {
+                width: 100%;
+            }
+
+            iframe {
+                height: 300px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Main Banner Image -->
-    <img src="images.jpg" alt="Fun" class="scaled-image" />
-    
-    <!-- Main Title -->
-    <h1 class="important-text">Hey, LES! Get the Latest Scoop Right Here!</h1>
+    <div class="container">
+        <!-- Main Banner Image -->
+        <img src="images.jpg" alt="Fun" class="scaled-image" />
+        
+        <!-- Main Title -->
+        <h1 class="important-text">Hey, LES! Get the Latest Scoop Right Here!</h1>
 
-    <!-- News Section -->
-    <h2>News:</h2>
-    <img src="1.png" alt="LES News" class="scaled-image" />
-    <p>No news currently, but don't worry, school is getting real close and I'll make sure to get you updated on all the new fun!</p>
-    
-    <!-- Contact Us Section -->
-    <h2>Contact Us</h2>
-    <img src="contact us.png" alt="Contact Us!" class="scaled-image" />
-    <p class="important-text">Have a news tip or feedback? Fill out this form below to send us a message!</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeXdygzkVI7KtGScOuznJBP_Xq2fyNOSN3TmGDaTe52E-a4ng/viewform?embedded=true">Loading…</iframe>
+        <!-- News Section -->
+        <div class="section">
+            <h2>News:</h2>
+            <img src="1.png" alt="LES News" class="scaled-image" />
+            <p>No news currently, but don't worry, school is getting real close and I'll make sure to get you updated on all the new fun!</p>
+        </div>
+        
+        <!-- Contact Us Section -->
+        <div class="section">
+            <h2>Contact Us</h2>
+            <img src="contact us.png" alt="Contact Us!" class="scaled-image" />
+            <p class="important-text">Have a news tip or feedback? Fill out this form below to send us a message!</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeXdygzkVI7KtGScOuznJBP_Xq2fyNOSN3TmGDaTe52E-a4ng/viewform?embedded=true">Loading…</iframe>
+        </div>
 
-    <!-- Submit an Article Section -->
-    <p class="important-text">Would you like to write your very own article? Send in your work using the form below and get a chance to have your article published!</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWQfqeO1NRmj3Fq9-uFXRJphe_-uD4rViEZ2GnJw7tLh3W0g/viewform?embedded=true">Loading…</iframe>
-    
-    <!-- Other Links Section -->
-    <h2>Other Links:</h2>
-    <img src="web.png" alt="Other Links:" class="scaled-image" />
-    <a href="https://lesson.lesbg.com/index.php" target="_blank" title="This will take you to LESSON.lesbg.com">Go to LESSON</a><br>
-    <a href="https://www.lesbg.com/site/" target="_blank" title="This will take you to the official website of LES">Official Website</a>
+        <!-- Submit an Article Section -->
+        <div class="section">
+            <p class="important-text">Would you like to write your very own article? Send in your work using the form below and get a chance to have your article published!</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWQfqeO1NRmj3Fq9-uFXRJphe_-uD4rViEZ2GnJw7tLh3W0g/viewform?embedded=true">Loading…</iframe>
+        </div>
+        
+        <!-- Other Links Section -->
+        <div class="section">
+            <h2>Other Links:</h2>
+            <img src="web.png" alt="Other Links:" class="scaled-image" />
+            <a href="https://lesson.lesbg.com/index.php" target="_blank" title="This will take you to LESSON.lesbg.com">Go to LESSON</a><br>
+            <a href="https://www.lesbg.com/site/" target="_blank" title="This will take you to the official website of LES">Official Website</a>
+        </div>
 
-    <hr>
-
-    <!-- About Website -->
-    <p>My website is a dynamic platform designed to enhance school life by fostering collaboration and healthy competition among house teams. In partnership with the school, it serves as a hub for organizing team house events, publishing articles on daily school activities, and announcing the outcomes of various competitions. Through academic decathlons and other challenges, students from different house teams can compete, with winning teams being recognized and celebrated on the site. Moreover, the platform ensures inclusivity by offering every student the opportunity to contribute articles, creating a vibrant and engaged community.</p>
-
-    <hr>
+        <!-- About Website -->
+        <div class="section">
+            <p>My website is a dynamic platform designed to enhance school life by fostering collaboration and healthy competition among house teams. In partnership with the school, it serves as a hub for organizing team house events, publishing articles on daily school activities, and announcing the outcomes of various competitions. Through academic decathlons and other challenges, students from different house teams can compete, with winning teams being recognized and celebrated on the site. Moreover, the platform ensures inclusivity by offering every student the opportunity to contribute articles, creating a vibrant and engaged community.</p>
+        </div>
+    </div>
 </body>
 </html>
